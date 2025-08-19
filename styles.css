@@ -23,6 +23,28 @@ body {
                 #000000;
 }
 
+:root{
+    --text: #e6e6e6;
+    --muted: #bdbdbd;
+    --accent: #64b5f6;
+    --accent-2: #f48fb1;
+    --accent-3: #ffd54f;
+    --glass: rgba(255,255,255,0.06);
+}
+
+.container-narrow{
+    max-width: 1080px;
+}
+
+.section{
+    padding: 80px 0;
+}
+
+.reveal-up{
+    opacity: 0;
+    transform: translateY(24px);
+}
+
 .navbar-glass {
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(10px);
@@ -94,3 +116,65 @@ body {
 .bg-gradient {
     background: linear-gradient(90deg, #64b5f6 0%, #b39ddb 50%, #f48fb1 100%);
 }
+
+/* New skills layout */
+.skill-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px 24px;
+}
+@media (min-width: 768px){
+    .skill-list{ grid-template-columns: 1fr 1fr; }
+}
+.skill{
+    background: var(--glass);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+.skill .label{
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-weight: 600;
+}
+.skill .bar{
+    height: 10px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 999px;
+    overflow: hidden;
+}
+.skill .bar > span{
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
+    border-radius: 999px;
+}
+
+/* Projects grid */
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+@media (min-width: 768px){
+    .projects-grid{ grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1200px){
+    .projects-grid{ grid-template-columns: 1fr 1fr 1fr; }
+}
+.project-card{
+    background: var(--glass);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.project-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.4);
+}
+.project-card img{ display:block; width:100%; height: 180px; object-fit: cover; }
+.project-card .content{ padding: 16px; }
+.project-card .tags{ display:flex; flex-wrap: wrap; gap: 6px; }
