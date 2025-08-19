@@ -244,7 +244,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center fixed-top navbar-glass">
                     <div class="col-6 align-items-center text-white">
-                        <div href="#" class="h1 mx-3 text-light brand">Portfolio</div>
+                        <div href="#" class="h1 mx-3 text-light brand" style="font-family: 'VT323', sans-serif;">Portfolio</div>
                     </div>
                     <div class="col-6">
                         <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
@@ -271,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid hero-section" style="margin-top: 300px;font-family: 'Agraham', sans-serif;">
+            <div class="container-fluid hero-section" style="font-family: 'Agraham', sans-serif;">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h1 class="display-3 text-center gradient-text" style="margin-bottom: 80px;">Hi, I'm Pavithran Murugan</h1>
@@ -286,7 +286,7 @@
             <!-- About Section -->
             <div class="container-fluid" style="margin-top: 200px;">
                 <div style="padding-left: 10px;">
-                    <h2 class=" m-4 bg-warning text-dark" id="aboutMe">About Me</h2>
+                    <h2 class=" m-4 section-heading" id="aboutMe">About Me</h2>
                 </div>
                 <p class="h3 mt-5" style="margin-left: 100px;">
                     Hello! I am Pavithran Murugan, a passionate Full Stack Developer with expertise in Python, MySQL, HTML, CSS, and JavaScript. 
@@ -300,31 +300,31 @@
             <!-- What I'm Doing Section -->
             <div class="container-fluid" id="doingSection" style="margin-top: 100px;">
                 <div style="padding-left: 10px;" class="mb-5">
-                    <h2  class=" m-4 bg-warning text-dark" style="justify-content: flex-start;align-items: flex-start;display: flex;">What I'm doing</h2>
+                    <h2  class=" m-4 section-heading" style="justify-content: flex-start;align-items: flex-start;display: flex;">What I'm doing</h2>
                 </div>
                 <div class="row g-3 justify-content-center" style="padding-left: 50px;">
-                    <div class="col text-white  mx-4 p-4 rounded-4 glass-effect ">
+                    <div class="col text-white  mx-4 p-4 rounded-4 glass-effect card-glass ">
                         <img src="freepik__background__64039.png" alt="web-design logo" style="width: 10%;" class="img-fluid mb-3">
                         <div>
                             <h3>Web Designer</h3>
                             <h5>Crafted with the most modern and high-quality standards, delivering professional-level results.</h5>
                         </div>
                     </div>
-                    <div class="col text-white  mx-4 p-4 rounded-4 glass-effect" >
+                    <div class="col text-white  mx-4 p-4 rounded-4 glass-effect card-glass" >
                         <img src="py.png" alt="web-design logo" style="width: 15%;" class="img-fluid mb-3">
                         <div>
                             <h3>Python Developer</h3>
                             <h5>The most modern and high-quality design, made at a professional level.</h5>
                         </div>
                     </div>
-                    <div class="col text-white mx-4 p-4 rounded-4 glass-effect">
+                    <div class="col text-white mx-4 p-4 rounded-4 glass-effect card-glass">
                         <img src="web-development.png" alt="web-design logo" style="width: 10%;" class="img-fluid mb-3">
                         <div>
                             <h3>Web Development</h3>
                             <h5>The most modern and high-quality design, made at a professional level.</h5>
                         </div>
                     </div>
-                    <div class="col text-white mx-4 p-4 rounded-4 glass-effect">
+                    <div class="col text-white mx-4 p-4 rounded-4 glass-effect card-glass">
                         <img src="Software Developer.png" alt="web-design logo" style="width: 15%;" class="img-fluid mb-3">
                         <div>
                             <h3>Software Developer</h3>
@@ -336,10 +336,10 @@
             <!-- Skill Section -->
             <div class="container-fluid" id="skillSection" style="margin-top: 100px;">
                 <div style="padding-left: 10px;" class="mb-5">
-                    <h2 class=" m-4 px-5 bg-warning text-dark">Skills</h2>    
+                    <h2 class=" m-4 px-5 section-heading">Skills</h2>    
                 </div>
                 
-                <div class="container">
+                <div class="container d-none d-md-block">
                     <div class="row">
                         <div class="col">
                             <div class="progress blue">
@@ -382,7 +382,7 @@
                     </div>
                 </div>
         
-                <div class="container my-3">
+                <div class="container my-3 d-none d-md-block">
                     <div class="row">
                         <div class="col">
                             <div class="progress red">
@@ -424,11 +424,38 @@
                         </div>
                     </div>
                 </div>
+                <!-- Mobile-friendly skill bars -->
+                <div class="container d-block d-md-none">
+                    <div class="skill-bar mb-3">
+                        <div class="d-flex justify-content-between"><span>Python</span><span>90%</span></div>
+                        <div class="progress custom-progress"><div class="progress-bar bg-gradient" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="d-flex justify-content-between"><span>HTML</span><span>75%</span></div>
+                        <div class="progress custom-progress"><div class="progress-bar bg-gradient" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="d-flex justify-content-between"><span>CSS</span><span>75%</span></div>
+                        <div class="progress custom-progress"><div class="progress-bar bg-gradient" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="d-flex justify-content-between"><span>JavaScript</span><span>75%</span></div>
+                        <div class="progress custom-progress"><div class="progress-bar bg-gradient" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="d-flex justify-content-between"><span>MySQL</span><span>70%</span></div>
+                        <div class="progress custom-progress"><div class="progress-bar bg-gradient" style="width: 70%"></div></div>
+                    </div>
+                    <div class="skill-bar mb-3">
+                        <div class="d-flex justify-content-between"><span>Bootstrap</span><span>75%</span></div>
+                        <div class="progress custom-progress"><div class="progress-bar bg-gradient" style="width: 75%"></div></div>
+                    </div>
+                </div>
             </div>
             <!-- Project Section -->
             <div class="container-fluid" id="projectSection" style="margin-top: 100px;margin-bottom: 50px;">
                 <div style="padding-left: 10px;" class="mb-5">
-                    <h2 class="bg-warning text-dark  m-4 px-5">Projects</h2>
+                    <h2 class="m-4 px-5 section-heading">Projects</h2>
                 </div>
                     <div class=" row px-5">
                     <div class="row glass-effect m-2">
@@ -481,7 +508,7 @@
             </div>
             <div class="container-fluid" id="contactSection">
                 <div style="padding-left: 10px;" class="mb-5">
-                    <h2 class=" m-4 px-5 bg-warning text-dark">Contact</h2>    
+                    <h2 class=" m-4 px-5 section-heading">Contact</h2>    
                 </div>
                 <div class="container-fluid d-flex justify-content-center">
                     <div class="row col-lg-6 col-12">
@@ -506,7 +533,7 @@
                             <textarea  class="form-control bg-transparent text-light" name="message" id="message" placeholder="Your Message" required></textarea>
                         </div>
                         <div id="contact-form" class="form-label col-12 text-center py-4">
-                            <button type="submit" id="button"  class="btn btn-danger" onclick="popup_message()">Submit</button>
+                            <button type="submit" id="button"  class="btn btn-gradient" onclick="popup_message()">Submit</button>
                             <script>
                                 function popup_message(){
                                     let name = document.getElementById("name").value
@@ -549,10 +576,56 @@
                 </div>
             </div>
             <div class="container-fluid text-center" id="footerSection" style="padding-top: 50px;">
+                <div class="pb-3 footer-icons">
+                    <a href="https://github.com/Pavi005" class="text-light mx-2" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/pavithranmurugan" class="text-light mx-2" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="mailto:pavithranmurugan.official@gmail.com" class="text-light mx-2" aria-label="Email"><i class="fas fa-envelope fa-lg"></i></a>
+                    <a href="resume.pdf" class="btn btn-gradient ms-2" download>Download Resume</a>
+                </div>
                 <p>&copy; 2025 Pavithran Murugan. All rights reserved.</p>     
             </div>
             <!-- Include Bootstrap JavaScript and Popper.js -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <script>
+                // Smooth scroll behavior and active nav
+                document.addEventListener('DOMContentLoaded', function() {
+                    const navAnchors = document.querySelectorAll('.navbar a.nav-link');
+                    navAnchors.forEach(a => {
+                        a.addEventListener('click', (e) => {
+                            const href = a.getAttribute('href') || '';
+                            if (href.startsWith('#')) {
+                                e.preventDefault();
+                                const target = document.querySelector(href);
+                                if (target) {
+                                    window.scrollTo({ top: target.offsetTop - 100, behavior: 'smooth' });
+                                }
+                            }
+                        })
+                    });
+                    const sections = [
+                        { id: 'aboutMe', selector: 'a[href="#aboutMe"]' },
+                        { id: 'skillSection', selector: 'a[href="#skillSection"]' },
+                        { id: 'projectSection', selector: 'a[href="#projectSection"]' },
+                        { id: 'contactSection', selector: 'a[href="#contactSection"]' }
+                    ];
+                    const navLinks = sections.map(s => document.querySelector(s.selector)).filter(Boolean);
+                    function onScroll() {
+                        const scrollPos = window.scrollY + 130;
+                        let currentId = null;
+                        for (const s of sections) {
+                            const el = document.getElementById(s.id);
+                            if (el && el.offsetTop <= scrollPos) currentId = s.id;
+                        }
+                        navLinks.forEach(l => l.classList.remove('active'));
+                        if (currentId) {
+                            const active = document.querySelector(`a[href="#${currentId}"]`);
+                            if (active) active.classList.add('active');
+                        }
+                    }
+                    window.addEventListener('scroll', onScroll, { passive: true });
+                    onScroll();
+                });
+            </script>
         </div>
     </div>    
 </body>
